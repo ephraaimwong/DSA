@@ -13,4 +13,4 @@ private:
 	int SID;
 	float GPA;
 };
-#endif //STUDENT_H
+#endif // !STUDENT_H

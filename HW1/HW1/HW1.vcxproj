@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HW1_CS2413.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="University.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Student.h">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
     <ClInclude Include="University.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

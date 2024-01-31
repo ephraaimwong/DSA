@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-HW1_CS2413",
+      "appliesTo": "HW1/HW1_CS2413.cpp",
+      "type": "launch"
+    }
+  ]
+}

@@ -24,16 +24,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HW1_CS2413.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="University.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Student.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="University.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
