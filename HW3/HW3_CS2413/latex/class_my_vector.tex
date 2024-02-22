@@ -1,0 +1,147 @@
+\doxysection{My\+Vector Class Reference}
+\hypertarget{class_my_vector}{}\label{class_my_vector}\index{MyVector@{MyVector}}
+
+
+Vector Class based on array, pointer and dynamic memory allocation.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_my_vector_a580fe11e223c9fe233614a70fd36ea17}\label{class_my_vector_a580fe11e223c9fe233614a70fd36ea17} 
+{\bfseries My\+Vector} ()
+\begin{DoxyCompactList}\small\item\em Construct a new My Vector object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_vector_a0b73592a0b1f6bc90a83d987c217f997}{vsize}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for private field size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_vector_a98f9347f85202280068e952163969265}{empty}} ()
+\begin{DoxyCompactList}\small\item\em returns 1 if empty, 0 if not \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_vector_a2878f79877c0a00c59d4b5b49f00f310}{at}} (int idx)
+\begin{DoxyCompactList}\small\item\em returns element at p\mbox{[}idx\mbox{]}, -\/1 if idx out of array range \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_vector_ab4d678f6170986d83c9ec0fc44a0063f}{resize}} (int n)
+\begin{DoxyCompactList}\small\item\em resize array to specified size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_vector_ac21c991c01711cc6b2036a8a82a19114}{push\+\_\+back}} (int x)
+\begin{DoxyCompactList}\small\item\em Adds element to the end of array. \end{DoxyCompactList}\item 
+\Hypertarget{class_my_vector_a8b9f5c6f5b07ae13f5a07ed0263f391a}\label{class_my_vector_a8b9f5c6f5b07ae13f5a07ed0263f391a} 
+void {\bfseries pop\+\_\+back} ()
+\begin{DoxyCompactList}\small\item\em Removes last element of array Does nothing if array is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_vector_a11fc8ccd1efaa8d1ec3cc55ab8369973}{insert}} (int idx, int x)
+\begin{DoxyCompactList}\small\item\em Insert element X at index idx, resizing array to compensate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_vector_a0670077cf426c3ad24c28ab518841dcf}{erase}} (int idx)
+\begin{DoxyCompactList}\small\item\em Removes element at index idx, resizing array to compensate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vector Class based on array, pointer and dynamic memory allocation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_my_vector_a2878f79877c0a00c59d4b5b49f00f310}\label{class_my_vector_a2878f79877c0a00c59d4b5b49f00f310} 
+\index{MyVector@{MyVector}!at@{at}}
+\index{at@{at}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily int My\+Vector\+::at (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns element at p\mbox{[}idx\mbox{]}, -\/1 if idx out of array range 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int value of p\mbox{[}idx\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_my_vector_a98f9347f85202280068e952163969265}\label{class_my_vector_a98f9347f85202280068e952163969265} 
+\index{MyVector@{MyVector}!empty@{empty}}
+\index{empty@{empty}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily int My\+Vector\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns 1 if empty, 0 if not 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_my_vector_a0670077cf426c3ad24c28ab518841dcf}\label{class_my_vector_a0670077cf426c3ad24c28ab518841dcf} 
+\index{MyVector@{MyVector}!erase@{erase}}
+\index{erase@{erase}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void My\+Vector\+::erase (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes element at index idx, resizing array to compensate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of removal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_vector_a11fc8ccd1efaa8d1ec3cc55ab8369973}\label{class_my_vector_a11fc8ccd1efaa8d1ec3cc55ab8369973} 
+\index{MyVector@{MyVector}!insert@{insert}}
+\index{insert@{insert}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void My\+Vector\+::insert (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert element X at index idx, resizing array to compensate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of insertion \\
+\hline
+{\em x} & Element to insert \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_vector_ac21c991c01711cc6b2036a8a82a19114}\label{class_my_vector_ac21c991c01711cc6b2036a8a82a19114} 
+\index{MyVector@{MyVector}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void My\+Vector\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds element to the end of array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Element to append \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_vector_ab4d678f6170986d83c9ec0fc44a0063f}\label{class_my_vector_ab4d678f6170986d83c9ec0fc44a0063f} 
+\index{MyVector@{MyVector}!resize@{resize}}
+\index{resize@{resize}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void My\+Vector\+::resize (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+resize array to specified size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & new size of array \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_vector_a0b73592a0b1f6bc90a83d987c217f997}\label{class_my_vector_a0b73592a0b1f6bc90a83d987c217f997} 
+\index{MyVector@{MyVector}!vsize@{vsize}}
+\index{vsize@{vsize}!MyVector@{MyVector}}
+\doxysubsubsection{\texorpdfstring{vsize()}{vsize()}}
+{\footnotesize\ttfamily int My\+Vector\+::vsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method for private field size. 
+
+\begin{DoxyReturn}{Returns}
+int size 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+HW3\+\_\+\+CS2413.\+cpp\end{DoxyCompactItemize}
