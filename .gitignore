@@ -18,7 +18,7 @@ Makefile
 *.dylib
 
 # Ignore IDE and editor files
-.vscode/
+.vs/
 .idea/
 *.suo
 *.sln
