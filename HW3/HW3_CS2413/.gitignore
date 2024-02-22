@@ -1,0 +1,29 @@
+# Ignore build artifacts
+build/
+bin/
+*.o
+*.obj
+
+# Ignore generated files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+
+# Ignore compiled executables and libraries
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.sln
+*.user
+*.ncb
+*.sdf
+*.suo
+*.opensdf
