@@ -1,0 +1,122 @@
+\doxysection{List Class Reference}
+\hypertarget{class_list}{}\label{class_list}\index{List@{List}}
+
+
+Singly Linked \doxylink{class_list}{List}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}\label{class_list_a64d878a92d11f7c63c70cbe4e7dd4176} 
+{\bfseries List} ()
+\begin{DoxyCompactList}\small\item\em public fields \end{DoxyCompactList}\item 
+\Hypertarget{class_list_a476c6b8f3661788b4d9bcf62a61a9ff3}\label{class_list_a476c6b8f3661788b4d9bcf62a61a9ff3} 
+void {\bfseries Prt\+SID} ()
+\item 
+void \mbox{\hyperlink{class_list_a742c8757fb8b722643feff239096f22a}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Populate \doxylink{class_list}{List} with Nodes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_list_a22f08ab325da7142d6be8a4498b84c6c}{Lsize}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_list}{List} Size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_aa3dff617c1db3ae6ba8951e55bed403d}{Find}} (int key)
+\begin{DoxyCompactList}\small\item\em Find \doxylink{class_node}{Node} based on SID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_list_ab0ee1285e4d853a09282163c18611a7a}{Insert}} (\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}p, int idx)
+\begin{DoxyCompactList}\small\item\em Insert new node at idx. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_list_ac97247bab5fd75c5e31e9a6f676c4985}{Remove}} (int idx)
+\begin{DoxyCompactList}\small\item\em Remove node at idx. \end{DoxyCompactList}\item 
+\Hypertarget{class_list_a3c9b938726daa0852d2987f5c5135585}\label{class_list_a3c9b938726daa0852d2987f5c5135585} 
+void {\bfseries Reverse} ()
+\begin{DoxyCompactList}\small\item\em Reverse \doxylink{class_node}{Node} order in \doxylink{class_list}{List}. \end{DoxyCompactList}\item 
+\Hypertarget{class_list_a68fcb6311b6d218b0c94f50d11f49301}\label{class_list_a68fcb6311b6d218b0c94f50d11f49301} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em clears all nodes in list \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singly Linked \doxylink{class_list}{List}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_a742c8757fb8b722643feff239096f22a}\label{class_list_a742c8757fb8b722643feff239096f22a} 
+\index{List@{List}!Create@{Create}}
+\index{Create@{Create}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily void List\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Populate \doxylink{class_list}{List} with Nodes. 
+
+Continuously reads SID and GPA, each new node is placed at head-\/\texorpdfstring{$>$}{>}Pnext \Hypertarget{class_list_aa3dff617c1db3ae6ba8951e55bed403d}\label{class_list_aa3dff617c1db3ae6ba8951e55bed403d} 
+\index{List@{List}!Find@{Find}}
+\index{Find@{Find}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} List\+::\+Find (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Find \doxylink{class_node}{Node} based on SID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Target SID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\texorpdfstring{$\ast$}{*} \doxylink{class_node}{Node} which matches target SID 
+\end{DoxyReturn}
+\Hypertarget{class_list_ab0ee1285e4d853a09282163c18611a7a}\label{class_list_ab0ee1285e4d853a09282163c18611a7a} 
+\index{List@{List}!Insert@{Insert}}
+\index{Insert@{Insert}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily int List\+::\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert new node at idx. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & new node address \\
+\hline
+{\em idx} & insert position in list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if success -\/1 if fail 
+\end{DoxyReturn}
+\Hypertarget{class_list_a22f08ab325da7142d6be8a4498b84c6c}\label{class_list_a22f08ab325da7142d6be8a4498b84c6c} 
+\index{List@{List}!Lsize@{Lsize}}
+\index{Lsize@{Lsize}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Lsize()}{Lsize()}}
+{\footnotesize\ttfamily int List\+::\+Lsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_list}{List} Size. 
+
+\begin{DoxyReturn}{Returns}
+int No. of Nodes in \doxylink{class_list}{List} 
+\end{DoxyReturn}
+\Hypertarget{class_list_ac97247bab5fd75c5e31e9a6f676c4985}\label{class_list_ac97247bab5fd75c5e31e9a6f676c4985} 
+\index{List@{List}!Remove@{Remove}}
+\index{Remove@{Remove}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily int List\+::\+Remove (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove node at idx. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Removal Position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if success -\/1 if fail 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_h_w4___c_s2413_8cpp}{HW4\+\_\+\+CS2413.\+cpp}}\end{DoxyCompactItemize}
