@@ -1,0 +1,36 @@
+Written portion
+Assume the amount of student names is some large constant and the amount of assignments is n
+1. Assume every hashs look up takes O(1) time, what would the runtime of your algorithm you
+wrote be? (In terms of Big O using n)
+
+O(n) for tallyAssignments method and O(n) for calculateMissing method. Therefore, overall runtime is O(n).
+
+2. What if you sorted the list of students and the assignments, what would the runtime of this
+algorithm be? (In terms of Big O using n)
+
+Sorting each list takes O(n log n) runtime while the tallyAssignments and calculateMissing Method takes O(n) runtime each. Therefore, overall runtime is O(n log n).
+
+3. What if you maintained an unsorted list of students names and assignments, what would the
+runtime of this algorithm be? (In terms of Big O using n)
+
+If sorting is not necessary, only tallyAssignments and calculateMissing methods runtime matters. Therefore, overall runtime would be O(n).
+
+Extra Credit
+You can get 20 extra credit points for the assignment total if you can answer the following:
+Assume the amount of names is n and the amount of assignments is m
+1. Assume every hash look up takes O(1) time, what would the runtime of your algorithm you
+wrote be? (In terms of Big O using n and/or m)
+
+When each hash lookup is O(1), tallyAssignments takes O(m) and calculateMissing takes O(n) runtime. Therefore, overall runtime would be O(n+m).
+
+2. What if you sorted the list of students and the assignments, what would the runtime of this
+algorithm be? (In terms of Big O using n and/or m)
+
+Sorting list of students takes O(n log n), sorting assignments takes O(m log m). Therefore, overall runtime is O(n log n + m log m).
+
+3. What if you maintained an unsorted list of students names and assignments, what would the
+runtime of this algorithm be? (In terms of Big O using n and/or m)
+
+If sorting is not necessary, only tallyAssignments and calculateMissing methods runtime matters. Therefore, overall runtime would be O(n+m).
+
+

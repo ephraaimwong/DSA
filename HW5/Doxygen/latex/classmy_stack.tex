@@ -1,0 +1,210 @@
+\doxysection{my\+Stack\texorpdfstring{$<$}{<} Type \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classmy_stack}{}\label{classmy_stack}\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+
+
+Stack data Structure.  
+
+
+
+
+{\ttfamily \#include $<$my\+Stack.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}{my\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor\+: Construct a new \doxylink{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}{my\+Stack$<$\+Type$>$\+::my\+Stack} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy_stack_a4238b2c9afbdbae217cc9942fbc9da06}{my\+Stack}} (\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Deep Copy Constructor\+: Construct a new my \doxylink{structbin_tree_node_aad0018a65d0853ceca219e963a2179bf}{Stack$<$\+Type$>$\+::my} Stack object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \& \mbox{\hyperlink{classmy_stack_a43688fa3933e591070a2947520e33e0c}{operator=}} (\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Assignment operator overload. Assigns the contents of one stack to another. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy_stack_acde4954a7f576e36ab81351091627445}{\texorpdfstring{$\sim$}{\string~}my\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Destroy the \doxylink{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}{my\+Stack$<$\+Type$>$\+::my\+Stack} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{classmy_stack_aed32f41f921bd10af21ac49d5582a61a}{push}} (\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{structbin_tree_node}{Type}} \&)
+\begin{DoxyCompactList}\small\item\em Push element on top of stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{classmy_stack_a6482d288973821efe4566b5a8117741f}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Removes head element of stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbin_tree_node}{Type}} \mbox{\hyperlink{classmy_stack_a9c3f1925b100fe5346387b0d6075d3b6}{top}} () \mbox{\hyperlink{structbin_tree_node}{const}}
+\begin{DoxyCompactList}\small\item\em Returns top element of stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbin_tree_node}{bool}} \mbox{\hyperlink{classmy_stack_a005cf47612b716bcf2b9682bd7ea5c47}{is\+Empty}} () \mbox{\hyperlink{structbin_tree_node}{const}}
+\begin{DoxyCompactList}\small\item\em Check if stack is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}}$>$\newline
+class my\+Stack$<$ Type $>$}
+Stack data Structure. 
+
+Class provides basic stack operations like push, pop, top and is\+Empty.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}\label{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!myStack@{myStack}}
+\index{myStack@{myStack}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{myStack()}{myStack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\mbox{\hyperlink{classmy_stack}{\+::my\+Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor\+: Construct a new \doxylink{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}{my\+Stack$<$\+Type$>$\+::my\+Stack} object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+\Hypertarget{classmy_stack_a4238b2c9afbdbae217cc9942fbc9da06}\label{classmy_stack_a4238b2c9afbdbae217cc9942fbc9da06} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!myStack@{myStack}}
+\index{myStack@{myStack}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{myStack()}{myStack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\mbox{\hyperlink{classmy_stack}{\+::my\+Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&}]{copy }\end{DoxyParamCaption})}
+
+
+
+Deep Copy Constructor\+: Construct a new my \doxylink{structbin_tree_node_aad0018a65d0853ceca219e963a2179bf}{Stack$<$\+Type$>$\+::my} Stack object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Stack to be copied \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmy_stack_acde4954a7f576e36ab81351091627445}\label{classmy_stack_acde4954a7f576e36ab81351091627445} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!````~myStack@{\texorpdfstring{$\sim$}{\string~}myStack}}
+\index{````~myStack@{\texorpdfstring{$\sim$}{\string~}myStack}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}myStack()}{\string~myStack()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classmy_stack}{my\+Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor\+: Destroy the \doxylink{classmy_stack_a9058b74bc812dc47b1f9307d03eff5bf}{my\+Stack$<$\+Type$>$\+::my\+Stack} object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmy_stack_a005cf47612b716bcf2b9682bd7ea5c47}\label{classmy_stack_a005cf47612b716bcf2b9682bd7ea5c47} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{bool}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if stack is empty. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+bool value ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{classmy_stack_a43688fa3933e591070a2947520e33e0c}\label{classmy_stack_a43688fa3933e591070a2947520e33e0c} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \& \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\mbox{\hyperlink{structbin_tree_node}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Assignment operator overload. Assigns the contents of one stack to another. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & The type of elements stored in the stack \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The stack to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned stack 
+\end{DoxyReturn}
+\Hypertarget{classmy_stack_a6482d288973821efe4566b5a8117741f}\label{classmy_stack_a6482d288973821efe4566b5a8117741f} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!pop@{pop}}
+\index{pop@{pop}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes head element of stack. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+\Hypertarget{classmy_stack_aed32f41f921bd10af21ac49d5582a61a}\label{classmy_stack_aed32f41f921bd10af21ac49d5582a61a} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!push@{push}}
+\index{push@{push}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{const}} \mbox{\hyperlink{structbin_tree_node}{Type}} \&}]{insert }\end{DoxyParamCaption})}
+
+
+
+Push element on top of stack. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em insert} & Element to insert \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmy_stack_a9c3f1925b100fe5346387b0d6075d3b6}\label{classmy_stack_a9c3f1925b100fe5346387b0d6075d3b6} 
+\index{myStack$<$ Type $>$@{myStack$<$ Type $>$}!top@{top}}
+\index{top@{top}!myStack$<$ Type $>$@{myStack$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{Type}} \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns top element of stack. 
+
+If stack empty, returns default Type() object
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of element stored in stack \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Top of Stack or default Type() object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{my_stack_8h}{my\+Stack.\+h}}\end{DoxyCompactItemize}

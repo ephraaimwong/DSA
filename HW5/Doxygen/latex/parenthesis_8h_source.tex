@@ -1,0 +1,58 @@
+\doxysection{parenthesis.\+h}
+\hypertarget{parenthesis_8h_source}{}\label{parenthesis_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ type>}
+\DoxyCodeLine{00002\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{binary_tree_8h_ae33f627af29a0e60493182de96f6326c}{readLISP}}(\mbox{\hyperlink{structbin_tree_node}{binTreeNode<type>}}\ *\ \mbox{\hyperlink{structbin_tree_node}{r}},\ \ \mbox{\hyperlink{structbin_tree_node}{ifstream}}\&\ \mbox{\hyperlink{structbin_tree_node}{infile}})}
+\DoxyCodeLine{00003\ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{binTreeNode<int>}}\ *\ \mbox{\hyperlink{structbin_tree_node}{tmp}};}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structbin_tree_node}{value}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//get}}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{structbin_tree_node}{parenthesis}}\ ==\ \textcolor{charliteral}{'('})}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ left}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};\ \textcolor{comment}{//get\ right\ parenthesis,\ but}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ this\ parenthesis\ can\ be\ either\ an\ integer\ or\ a\ "{}("{}}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{structbin_tree_node}{parenthesis}}\ !=\ \textcolor{charliteral}{')'})\ \ \textcolor{comment}{//\ if\ it\ is\ a\ digit,\ put\ value\ in\ tree}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}.putback(\mbox{\hyperlink{structbin_tree_node}{parenthesis}});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{value}};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>left\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structbin_tree_node}{binTreeNode<int>}};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{tmp}}\ =\ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>left;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{tmp}}-\/>item\ =\ \mbox{\hyperlink{structbin_tree_node}{value}};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{binary_tree_8h_ae33f627af29a0e60493182de96f6326c}{readLISP}}(\mbox{\hyperlink{structbin_tree_node}{r}}-\/>left,\ \mbox{\hyperlink{structbin_tree_node}{infile}});}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};\ \textcolor{comment}{//\ get\ right\ parenthesis}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>left\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//right}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};\ \textcolor{comment}{//\ get\ left\ parenthesis}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//cout\ <<\ "{}parenthesis\ one\ "{}\ <<\ parenthesis\ <<\ endl;}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{structbin_tree_node}{parenthesis}}\ ==\ \textcolor{charliteral}{'('})}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};\ \textcolor{comment}{//get\ right\ parenthesis,\ but}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//cout\ <<\ "{}parenthesis\ two\ "{}\ <<\ parenthesis\ <<\ endl;}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{structbin_tree_node}{parenthesis}}\ !=\ \textcolor{charliteral}{')'})\ \ \textcolor{comment}{//\ if\ it\ is\ a\ digit,\ put\ value\ in\ tree}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}.putback(\mbox{\hyperlink{structbin_tree_node}{parenthesis}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{value}};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>right\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structbin_tree_node}{binTreeNode<int>}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{tmp}}\ =\ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>right;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{tmp}}-\/>item\ =\ \mbox{\hyperlink{structbin_tree_node}{value}};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{binary_tree_8h_ae33f627af29a0e60493182de96f6326c}{readLISP}}(\mbox{\hyperlink{structbin_tree_node}{r}}-\/>right,\ \mbox{\hyperlink{structbin_tree_node}{infile}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{infile}}\ >>\ \mbox{\hyperlink{structbin_tree_node}{parenthesis}};\ \textcolor{comment}{//\ get\ right\ parenthesis}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structbin_tree_node}{r}}-\/>right\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,117 @@
+\doxysection{binary\+Tree.\+h File Reference}
+\hypertarget{binary_tree_8h}{}\label{binary_tree_8h}\index{binaryTree.h@{binaryTree.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include "{}my\+Stack.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node$<$ Type $>$}}
+\begin{DoxyCompactList}\small\item\em Binary Tree Node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ }\\\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{binary_tree_8h_ae33f627af29a0e60493182de96f6326c}{read\+LISP}} (\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}\&\mbox{\hyperlink{structbin_tree_node}{r}}, \mbox{\hyperlink{structbin_tree_node}{ifstream}} \&\mbox{\hyperlink{structbin_tree_node}{infile}})
+\begin{DoxyCompactList}\small\item\em Read binary\+Tree from LISP Expression. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ }\\\mbox{\hyperlink{structbin_tree_node}{bool}} \mbox{\hyperlink{binary_tree_8h_a2b573b3a2f4cc742674e66ae0ea8757f}{evaluate}} (\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structbin_tree_node}{r}}, \mbox{\hyperlink{structbin_tree_node}{int}} \mbox{\hyperlink{structbin_tree_node}{running\+Sum}}, \mbox{\hyperlink{structbin_tree_node}{int}} \mbox{\hyperlink{structbin_tree_node}{target\+Sum}}, \mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&\mbox{\hyperlink{structbin_tree_node}{path}})
+\begin{DoxyCompactList}\small\item\em Evaluates a binary tree to determine if there exists a path with a target sum. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ }\\\mbox{\hyperlink{structbin_tree_node}{void}} \mbox{\hyperlink{binary_tree_8h_a4ba20fa8a7cd42eef32c156539cb2339}{destroy\+Tree}} (\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structbin_tree_node}{r}})
+\begin{DoxyCompactList}\small\item\em Recursively destroys binary\+Tree and deallocates memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+iampo (\href{mailto:3452838+ephraaimwong@users.noreply.github.com}{\texttt{ 3452838+ephraaimwong@users.\+noreply.\+github.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\doxylink{structbin_tree_node_aad0018a65d0853ceca219e963a2179bf}{0.\+1} 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/03-\/28
+\end{DoxyDate}
+This header file defines a binary tree structure and provides functions for reading a tree from a LISP expression, evaluating the tree to find a path with a target sum, and destroying the tree.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{binary_tree_8h_a4ba20fa8a7cd42eef32c156539cb2339}\label{binary_tree_8h_a4ba20fa8a7cd42eef32c156539cb2339} 
+\index{binaryTree.h@{binaryTree.h}!destroyTree@{destroyTree}}
+\index{destroyTree@{destroyTree}!binaryTree.h@{binaryTree.h}}
+\doxysubsubsection{\texorpdfstring{destroyTree()}{destroyTree()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{void}} destroy\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}}]{r }\end{DoxyParamCaption})}
+
+
+
+Recursively destroys binary\+Tree and deallocates memory. 
+
+Traverses binary\+Tree in postorder fashion, left\texorpdfstring{$>$}{>}right\texorpdfstring{$>$}{>}root
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Type of Data held by node \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Pointer to root node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{binary_tree_8h_a2b573b3a2f4cc742674e66ae0ea8757f}\label{binary_tree_8h_a2b573b3a2f4cc742674e66ae0ea8757f} 
+\index{binaryTree.h@{binaryTree.h}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!binaryTree.h@{binaryTree.h}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{bool}} evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}}]{r,  }\item[{\mbox{\hyperlink{structbin_tree_node}{int}}}]{running\+Sum,  }\item[{\mbox{\hyperlink{structbin_tree_node}{int}}}]{target\+Sum,  }\item[{\mbox{\hyperlink{classmy_stack}{my\+Stack}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Evaluates a binary tree to determine if there exists a path with a target sum. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Generics since node stores int and char \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Pointer to Root node(currently evaluated node) \\
+\hline
+{\em running\+Sum} & Sum of node values along current path \\
+\hline
+{\em target\+Sum} & Value that running sum should match \\
+\hline
+{\em path} & Stack to store nodes along current path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Path exists 
+
+false Path !exists 
+\end{DoxyReturn}
+\Hypertarget{binary_tree_8h_ae33f627af29a0e60493182de96f6326c}\label{binary_tree_8h_ae33f627af29a0e60493182de96f6326c} 
+\index{binaryTree.h@{binaryTree.h}!readLISP@{readLISP}}
+\index{readLISP@{readLISP}!binaryTree.h@{binaryTree.h}}
+\doxysubsubsection{\texorpdfstring{readLISP()}{readLISP()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structbin_tree_node}{class}} \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \\
+\mbox{\hyperlink{structbin_tree_node}{void}} read\+LISP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbin_tree_node}{bin\+Tree\+Node}}$<$ \mbox{\hyperlink{structbin_tree_node}{Type}} $>$ \texorpdfstring{$\ast$}{*}\&}]{r,  }\item[{\mbox{\hyperlink{structbin_tree_node}{ifstream}} \&}]{infile }\end{DoxyParamCaption})}
+
+
+
+Read binary\+Tree from LISP Expression. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & Generics since expression holds int and char \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Reference of Root node \\
+\hline
+{\em infile} & Input file stream \\
+\hline
+\end{DoxyParams}
